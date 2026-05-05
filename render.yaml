@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: aaf-service
+    env: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: AAF_SERVICE_TOKEN
+        sync: false
